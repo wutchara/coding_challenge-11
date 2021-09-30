@@ -1,0 +1,27 @@
+{
+  "name": "coding_challenge-11",
+  "version": "1.0.0",
+  "description": "This coding challenge is all about **working with a designer and building a project for a client as if you just started a development company**. You will have to meet a deadline and finish a website (which you will be able to add to your portfolio) based on the design requirements of the client. A very valuable skill to learn. Let's get started!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wutchara/coding_challenge-11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wutchara/coding_challenge-11/issues"
+  },
+  "homepage": "https://github.com/wutchara/coding_challenge-11#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
