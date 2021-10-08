@@ -7,13 +7,16 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <title>Frontend Mentor | Huddle landing page with alternating sections</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .container img {
-      width: 100%;
+    body {
+      text-align: center;
+      align-items: center;
+      margin: 0%;
     }
 
     .attribution {
@@ -25,129 +28,263 @@
       color: hsl(228, 45%, 44%);
     }
 
+    .self-center {
+      align-self: center;
+    }
+
     #grow-section {
-        /* background-image: url('./images/bg-section-top-desktop.svg'); */
+      /* background-image: url('./images/illustration-grow-together.svg'); */
+      background-color: #f5faff;
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+
+    #flowing-section {
+      /* background-image: url('./images/illustration-flowing-conversation.svg'); */
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+
+    #your-user-section {
+      /* background-image: url('./images/illustration-your-users.svg'); */
+      background-color: #f5faff;
+      background-repeat: no-repeat;
+      background-size: auto;
     }
 
     footer {
-      background-image: url('./images/bg-footer-top-desktop.svg');
+      /* background-image: url('./images/bg-footer-top-desktop.svg'); */
       color: whitesmoke;
+    }
+
+    .navbar-custom {
+      /* background-color: none; */
+      margin: 50px 10px;
+      padding: .5rem 1rem;
+    }
+
+    #welcome-section {
+      margin-bottom: 20vh;
+    }
+
+    .btn {
+      border-radius: 25px;
+    }
+
+    .btn-primary {
+      border-color: hsl(322, 100%, 66%);
+      background-color: hsl(322, 100%, 66%);
+    }
+
+    .btn-outline-primary {
+      color: hsl(322, 100%, 66%);
+      border-color: hsl(322, 100%, 66%);
+    }
+
+    .image-section {
+      align-items: center;
+    }
+
+    .container {
+      padding: 100px 15px 0px 15px;
+    }
+
+    img {
+      vertical-align: middle;
+      border-style: none;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #flowing-section {
+      margin: 50px 0px;
+    }
+
+    #footer {
+      background-color: #00252e;
+    }
+
+    .mrt-h {
+      margin-top: 20vh;
+    }
+
+    .mrb-h {
+      margin-bottom: 20vh;
+    }
+
+    .text-left {
+      text-align: start;
+      padding-top: 50px;
+      padding-left: 50px;
+      /* align-items: stretch; */
     }
   </style>
 </head>
 
 <body>
-  <img src = "./images/logo.svg" alt="logo"/>
-  <button type="button" class="btn btn-outline-primary">Try it free</button><br />
+  <nav class="navbar navbar-light navbar-custom">
+    <a class="navbar-brand" href="#">
+      <img src="./images/logo.svg" alt="logo" height="30vh" />
+    </a>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h3>Build The Community Your Fans Will Love</h3>
+    <form class="form-inline">
+      <button type="button" class="btn btn-outline-primary">Try it free</button>
+    </form>
+  </nav>
+
+  <div class="">
+    <div id="welcome-section" class="container">
+      <div class="row">
+        <div class="col mb-4">
+          <h2>Build The Community Your Fans Will Love</h2>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        Huddle re-imagines the way we build communities. You have a voice, but so does
-        your audience. Create connections with your users as you engage in genuine discussion.
+      <div class="row mb-4">
+        <div class="col">
+          Huddle re-imagines the way we build communities. You have a voice, but so does
+          your audience. Create connections with your users as you engage in genuine discussion.
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-primary">Get Started For Free</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <img src = "./images/screen-mockups.svg" alt="screen-mockups"/>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary">Get Started For Free</button>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-6">
-        <img src = "./images/icon-communities.svg" alt="icon-communities"/>
-        <h1>1.4k+</h1>
-        Communities Formed
-      </div>
-      <div class="col-6">
-        <img src = "./images/icon-messages.svg" alt="icon-messages"/>
-        <h1>2.7m+</h1>
-        Messages Sent
+    <div class="image-section">
+      <div class="row">
+        <div class="col">
+          <img class="img-fluid img-top" src="./images/screen-mockups.svg" alt="logo" width="80%" />
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row" id="grow-section">
-    <div class="col">
-      <div>
-        <img src = "./images/bg-section-top-desktop-1.svg" alt="bg-section-top-desktop-1"/>
-        <img src = "./images/bg-section-bottom-desktop-1.svg" alt="bg-section-bottom-desktop-1"/>
+    <img class="img-fluid img-top" src = "./images/bg-section-top-desktop-1.svg" alt="bg-section-top-desktop-1"/>
+    <div class="row" id="grow-section">
+      <div class="col text-left">
+        <!-- TODO: -->
+        <!-- <img src = "./images/bg-section-top-desktop-1.svg" alt="bg-section-top-desktop-1"/>
+        <img src = "./images/bg-section-bottom-desktop-1.svg" alt="bg-section-bottom-desktop-1"/> -->
 
-        <img src = "./images/illustration-grow-together.svg" alt="illustration-grow-together"/>
         <h4>Grow Together</h4>
         Generate meaningful discussions with your audience and build a strong, loyal community.
         Think of the insightful conversations you miss out on with a feedback form.
       </div>
+      <div class="col self-center">
+        <img style="width: 40vw;" src="./images/illustration-grow-together.svg" alt="illustration-grow-together" />
+      </div>
     </div>
-  </div>
+    <img class="img-fluid img-top" src = "./images/bg-section-bottom-desktop-1.svg" alt="bg-section-bottom-desktop-1"/>
 
-  <div class="row">
-    <div class="col">
-      <img src = "./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation"/>
-  
-      <h4>Flowing Conversations</h4>
-      You wouldn't paginate a conversation in real life, so why do it online? Our threads have
-      just-in-time loading for a more natural flow.
+    <div class="row" id="flowing-section">
+      <div class="col self-center">
+        <img style="width: 40vw;" src="./images/illustration-flowing-conversation.svg"
+          alt="illustration-flowing-conversation" />
+      </div>
+      <div class="col text-left">
+        <h4>Flowing Conversations</h4>
+        You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+        just-in-time loading for a more natural flow.
+      </div>
     </div>
-  </div>
-  
-  <div class="row">
-    <div class="col">
-      <img src = "./images/bg-section-top-desktop-2.svg" alt="bg-section-top-desktop-2"/>
-      <img src = "./images/bg-section-bottom-desktop-2.svg" alt="bg-section-bottom-desktop-2"/>
 
-      <h4>Your Users</h4>
-      It takes no time at all to integrate Huddle with your app's authentication solution. This means,
-      once signed in to your app, your users can start chatting immediately.
-
-      <img src = "./images/illustration-your-users.svg" alt="illustration-your-users"/>
+    <img class="img-fluid img-top" src = "./images/bg-section-top-desktop-2.svg" alt="bg-section-top-desktop-2"/>
+    <div class="row" id="your-user-section">
+      <div class="col text-left">
+        <h4>Your Users</h4>
+        It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+        once signed in to your app, your users can start chatting immediately.
+      </div>
+      <div class="col self-center">
+        <img style="width: 40vw;" src="./images/illustration-your-users.svg" alt="illustration-your-users" />
+      </div>
     </div>
-  </div>
+    <img class="img-fluid img-top" src = "./images/bg-section-bottom-desktop-2.svg" alt="bg-section-bottom-desktop-2"/>
 
-  <div class="row">
-    <div class="col">
-      <h3>Ready To Build Your Community?</h3>
-      <button type="button" class="btn btn-primary">Get Started For Free</button>
+    <div class="row mrt-h">
+      <div class="col">
+        <h2>Ready To Build Your Community?</h2>
+      </div>
+    </div>
+    <div class="row mrb-h">
+      <div class="col">
+        <button type="button" class="btn btn-primary">Get Started For Free</button>
+      </div>
     </div>
   </div>
 
   <footer>
     <!-- <img src = "./images/bg-footer-top-desktop.svg" alt="bg-footer-top-desktop"/> -->
-    <div class="row">
-      <div class="col-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
-        vestibulum a, ultrices quis sem.
+    <img class="img-fluid img-top" src = "./images/bg-footer-top-desktop.svg" alt="bg-footer-top-desktop"/>
+    <div id="footer">
+      <div class="row">
+        <div class="col-4">
+          <div class="row mb-2">
+            <div class="col text-left pt-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+              vestibulum a, ultrices quis sem.
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col text-left pt-3">              
+              <div class="row">
+                <div class="col-1">
+                  <img src="./images/icon-phone.svg" alt="icon-phone" />
+                </div>
+                <div class="col-11">
+                  Phone: +1-543-123-4567
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col text-left pt-2">
+              <div class="row">
+                <div class="col-1">
+                  <img src="./images/icon-email.svg" alt="icon-email" />
+                </div>
+                <div class="col-11">
+                  example@huddle.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5">
+          <h4 class="text-left p-0 pb-2">Newsletter</h4>
 
-        <img src = "./images/icon-phone.svg" alt="icon-phone"/>
-        Phone: +1-543-123-4567
-        <img src = "./images/icon-email.svg" alt="icon-email"/>
-        example@huddle.com
+          <div class="row mb-4">
+            <div class="col text-left p-0 pl-2">
+              To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+              send you spam or pass on your email address
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <input type="text" class="form-control" />
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-primary" style="border-radius: 5px;">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
       </div>
-      <div class="col-6">
-        <h4>Newsletter</h4>
-        To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-        send you spam or pass on your email address
-
-        <button type="button" class="btn btn-primary">Subscribe</button>
-      </div>
+      <p class="attribution">
+        This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank">Frontend Mentor</a> 🎉
+      </p>
     </div>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank">Frontend Mentor</a> 🎉
-    </p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
